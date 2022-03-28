@@ -1,0 +1,50 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<title>Foodies-A place to donate money to people in Ukraine,suffering from the war.</title>
+</head>
+<body>
+<h1>Please Donate Money for people in Ukraine</h1>
+<form>
+      <fieldset>
+        <legend>Donation</legend>
+        <div class="form-control">
+          <label for="name">Price To Donate</label>
+          <input type="range" min="1" max="500" step="5" onchange="showValue(this.value)" />
+	  <script>
+	  function showValue(newValue){
+          	document.getElementById("value").value=newValue;
+	  }
+	  </script>
+	  $<input type="text" id="value">	
+        </div>
+
+        <div class="form-control">
+          <label>Name</label>
+          <input
+            id="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+          <div class="form-control">
+          <input
+            type="submit"	
+            onclick="changePage():"
+          />
+	  <script>
+		function changePage{
+		   money=document.getElementById("value").value
+	   	   document.write("Thank you for donating $"+money+"to Foodies.It really helps!")
+	  </script>
+        </div>
+
+      
+      </fieldset>
+</form>
+</body>
+</html>
+
+
+
+
